@@ -1,0 +1,30 @@
+#include<iostream>
+#include<conio.h>
+#include<math.h>
+using namespace std;
+int main()
+
+{
+	double interest, averageDailyBalance, netBalance, payment, d1, d2;
+	
+	cout << "Enter the balance shown in the bill: " <<endl;
+	cin>>netBalance;
+	
+	cout << "Enter the amount of payment made: " <<endl;
+	cin>>payment;
+	
+	cout << "Enter the number of days in the billing cycle: " <<endl;
+	cin>>d1;
+	
+	cout << "Enter the number of days before payment was made in the billing cycle: " <<endl;
+	cin>>d2;
+	
+	averageDailyBalance=(netBalance*d1-payment*d2);
+	
+	interest=(averageDailyBalance*0.0097);
+	
+	cout << "Your interest is: " <<interest;
+	
+	getch();
+	return 0;
+}
