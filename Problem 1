@@ -1,0 +1,37 @@
+#include<iostream>
+#include<conio.h>
+#include<math.h>
+using namespace std;
+int main()
+{
+	int A,B,C,D,e,f,g;
+	
+	cout<<"Ticket choices:"<<endl;
+	cout<<"1. Premium"<<endl;
+	cout<<"2. Sideline"<<endl;
+	cout<<"3. Box"<<endl;
+	cout<<"4. General Admission"<<endl;
+	
+	cout<<"Enter the type of ticket sold: "<<endl;
+	cin>>e;
+	
+	cout<<"Enter the number of tickets sold: "<<endl;
+	cin>>g;
+	
+	if (e=1)
+	f=g*250;
+	if(e=2)
+	f=g*100;
+	if(e=3)
+	f=g*50;
+	if(e=4)
+	f=g*25;
+	
+	if(e<=0&&e>4)
+	cout<<"The total amount is: "<<f;
+	else
+	cout<<"Invalid!!!"<<endl;
+
+	getch();
+	return 0;
+}
